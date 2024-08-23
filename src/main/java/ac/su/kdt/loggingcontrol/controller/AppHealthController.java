@@ -20,7 +20,7 @@ public class AppHealthController {
 
     @RequestMapping("/hash/{input}")
     public String getDigest(@PathVariable("input") String input) throws NoSuchAlgorithmException {
-        for(int i = 0; i < 300000; i++) {
+        for(int i = 0; i < 100000; i++) {
             input = getMD5Digest(input);
         }
         return input;
