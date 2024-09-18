@@ -15,7 +15,7 @@ import java.security.NoSuchAlgorithmException;
 public class AppHealthController {
     @GetMapping("/app-health")
     public String healthCheck() {
-        return "app_health_status 1.0\n# EOF 수정되나요";
+        return "app_health_status 1.0\n# EOF 웹훅 확인";
     }
 
     @RequestMapping("/hash/{input}")
